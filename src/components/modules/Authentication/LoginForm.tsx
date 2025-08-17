@@ -26,6 +26,7 @@ export function LoginForm({
     try {
       const res = await login(data).unwrap();
       console.log(res);
+      navigate("/");
     } catch (err: any) {
       console.error(err);
 

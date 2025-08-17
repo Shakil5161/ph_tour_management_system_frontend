@@ -45,3 +45,21 @@ Part-3
 
       By using dispatch(authApi.util.resetApiState()): https://redux-toolkit.js.org/rtk-query/api/created-api/api-slice-utils 
       It will remove all the auth related data such as cookies in real time without reloading   page. 
+
+Part-4
+  1. Setting Up the Dashboard and Admin Routes
+
+  2. Generating Routes Dynamically from Sidebar Items create generateRoutes.ts under utils and looping 2 times
+
+  3. Rendering Sidebar Items Based on User Role by creating getSidebarItems.ts and switch case condition under utils
+
+  4. UX and Performance Enhancements with Lazy Loading 
+     const Analytics = lazy(() => import("@/pages/admin/Analytics"))
+    
+  5. Implementing Route Authorization via Higher-Order Components (HOC) 
+     creating withAuth.tsx file under utils and manage some logic over there.
+     And use this function in the route file index.ts 
+     "Component: withAuth(DashboardLayout, role.superAdmin as TRole),"
+
+  6. Adding 'Tour Type' Feature and Updating the Corresponding Backend Endpoint
+     and use 'providesTags' and 'invalidatesTags' for render data without loading

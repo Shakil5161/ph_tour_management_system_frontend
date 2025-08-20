@@ -63,3 +63,5 @@ Part-4
 
   6. Adding 'Tour Type' Feature and Updating the Corresponding Backend Endpoint
      and use 'providesTags' and 'invalidatesTags' for render data without loading
+
+     
